@@ -1,0 +1,27 @@
+C# Track - Part 1 - OOP with Legos
+
+Watch the Instructional videos at the following link to learn about the 4 main OOP concepts. After
+watching please create a google doc and in your own words describe each of the 4 concepts in 3 sentences
+or less! (the less you need to define it the better)
+
+1 Inheritance
+2 Polymorphism
+3 Encapsulation
+4 Abstraction
+
+Inheritance:
+Inheritance is one of the important feature of OOP. Inheritance is the ability to create a derived
+class (child) that inherits the attributes and behaviours of the base class (parent class).
+
+Polymorphism:
+Polymorphism is ability to process objects differently depending on their data type or class. It
+is often expressed as ‘One interface, multiple functions’.
+
+Encapsulation:
+Encapsulation is a mechanism to encapsulate or hide the unwanted code or behavior from the user.
+Encapsulation enables a group of properties, methods and other members to be considered a single unit
+or object. Class is the best example of encapsulation.
+
+Abstraction:
+Abstraction in C# is used to show only the essential behavior of an object. In case of abstraction
+we know how an object can be used but do not know how it is implemented.
