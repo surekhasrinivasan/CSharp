@@ -1,0 +1,7 @@
+C:\Users\Sreenath\source\repos\CSharpClass\CSharpClass\bin\Debug\CSharpClass.exe.config
+C:\Users\Sreenath\source\repos\CSharpClass\CSharpClass\bin\Debug\CSharpClass.exe
+C:\Users\Sreenath\source\repos\CSharpClass\CSharpClass\bin\Debug\CSharpClass.pdb
+C:\Users\Sreenath\source\repos\CSharpClass\CSharpClass\obj\Debug\CSharpClass.csprojAssemblyReference.cache
+C:\Users\Sreenath\source\repos\CSharpClass\CSharpClass\obj\Debug\CSharpClass.csproj.CoreCompileInputs.cache
+C:\Users\Sreenath\source\repos\CSharpClass\CSharpClass\obj\Debug\CSharpClass.exe
+C:\Users\Sreenath\source\repos\CSharpClass\CSharpClass\obj\Debug\CSharpClass.pdb
