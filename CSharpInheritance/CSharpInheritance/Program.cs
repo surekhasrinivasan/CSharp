@@ -13,39 +13,43 @@ namespace CSharpInheritance
         {
             var man = new Man();
             var kart = new Kart();
-            var alien = new Alien();            
+            var alien = new Alien();         
         }
     }
 }
 
-// Man class
-public class Man
+// GeneralObject Class created to bring in common properties of Man, Kart and Alien
+public class GeneralObject
 {
-    public Man(){
-    }
-    public bool moves { get; set; } 
-    public string name { get; set; }
-    public string color { get; set; }
-}       
-
-// Kart class
-public class Kart
-{
-    public Kart(){
+    public GeneralObject(){
     }
     public bool moves { get; set; }
-    public string manufacturer { get; set; }
     public string color { get; set; }
 }
 
-// Alien class 
-public class Alien 
+// Man class inheriting GeneralObject class
+public class Man : GeneralObject
+{
+    public Man(){
+    }
+    public string name { get; set; }    
+}
+
+// Kart class inheriting GeneralObject Class
+public class Kart : GeneralObject
+{
+    public Kart()
+    {
+    }
+    public string manufacturer { get; set; }
+}
+
+// Alien class inheriting GeneralObject class
+public class Alien : GeneralObject
 {
     public Alien(){
     }
-    public bool moves { get; set; }
     public string planet { get; set; }
-    public string color { get; set; }
 }
 
 
