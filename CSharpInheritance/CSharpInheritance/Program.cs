@@ -17,8 +17,7 @@ namespace CSharpInheritance
         }
     }
 }
-
-// GeneralObject Class created to bring in common properties of Man, Kart and Alien
+// Tree Hierarchy of Inheritance - Man and Woman class inherits Human which inherits GeneralObject
 public class GeneralObject
 {
     public GeneralObject(){
@@ -26,22 +25,27 @@ public class GeneralObject
     public bool moves { get; set; }
     public string color { get; set; }
 }
-
-// Man class inheriting GeneralObject class
-public class Man : GeneralObject
-{
-    public Man(){
+    // Human class inherits GeneralObject class
+    public class Human : GeneralObject
+    {
+        public Human(){
+        }
+        public string name { get; set; }
     }
-    public string name { get; set; }    
-}
 
-// woman class inheriting GeneralObject class
-public class Woman : GeneralObject
-{
-    public Woman(){
-    }
-    public string name { get; set; }
-}
+        // Man class inheriting Human class
+        public class Man : Human
+        {
+            public Man(){
+            }           
+        }
+
+        // woman class inheriting Human class
+        public class Woman : Human
+        {
+            public Woman(){
+            }    
+        }
 
 // Kart class inheriting GeneralObject Class
 public class Kart : GeneralObject
