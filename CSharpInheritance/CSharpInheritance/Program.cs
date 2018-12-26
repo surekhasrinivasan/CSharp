@@ -35,6 +35,14 @@ public class Man : GeneralObject
     public string name { get; set; }    
 }
 
+// woman class inheriting GeneralObject class
+public class Woman : GeneralObject
+{
+    public Woman(){
+    }
+    public string name { get; set; }
+}
+
 // Kart class inheriting GeneralObject Class
 public class Kart : GeneralObject
 {
