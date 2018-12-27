@@ -14,6 +14,7 @@ namespace CSharpPolymorphism
             var worker = new FactoryWorker();
             worker.Count(5);
             worker.Count(6);
+            worker.Count(4.5f);
         }
     }
 
@@ -28,11 +29,21 @@ namespace CSharpPolymorphism
             if (Total == null)
                 Total = 0;
 
+            // convert number to float
+            Total = Total + Convert.ToSingle(number);
+
+            Console.WriteLine(Total.ToString());
+        }
+
+        // Another method with same name with different type of variable
+        // this method is called only whenever worker.Count() in main method is passed with a float 
+        public void Count(float number)
+        {
             Total = Total + number;
             Console.WriteLine(Total.ToString());
         }
 
         // Class variable
-        public int Total { get; set; }
+        public float Total { get; set; }
     }
 }
