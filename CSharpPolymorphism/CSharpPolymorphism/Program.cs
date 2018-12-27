@@ -15,6 +15,7 @@ namespace CSharpPolymorphism
             worker.Count(5);
             worker.Count(6);
             worker.Count(4.5f);
+            worker.Count(3.5);
         }
     }
 
@@ -43,7 +44,15 @@ namespace CSharpPolymorphism
             Console.WriteLine(Total.ToString());
         }
 
+        // Another method with same name with different type of variable
+        // this method is called only whenever worker.Count() in main method is passed with a double
+        public void Count(double number)
+        {
+            Total = Total + number;
+            Console.WriteLine(Total.ToString());
+        }
+
         // Class variable
-        public float Total { get; set; }
+        public double Total { get; set; }
     }
 }
