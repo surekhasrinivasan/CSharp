@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CSharpEncapsulation
 {
+    // Encapsulation is sometimes called Data hiding
     // Example for encapsulation
     class Program
     {
@@ -13,7 +14,8 @@ namespace CSharpEncapsulation
         {
             var worker = new FactoryWorker();
             var result = worker.addNumbers(5, 3);
-            Console.WriteLine(result);
+
+            Console.WriteLine(result.ToString());
         }
     }
 
@@ -22,10 +24,15 @@ namespace CSharpEncapsulation
         public FactoryWorker(){
         }
 
-        // Method to add numbers 
+        // Method to add numbers
+        // Changes made inside the method but does not affect the output
         public int addNumbers(int num1, int num2)
         {
             var result = num1 + num2;
+
+            result = result + 100;
+            result = result - 100;
+
             return result;
         } 
     }
