@@ -20,6 +20,14 @@ namespace MethodOverloadingExample
         }
     }
 
+    class Student : Person
+    {
+        public override void Work()
+        {
+            Console.WriteLine("It studies....");
+        }
+    }
+
     class Employee : Person
     {
         public double Salary { get; set; }
@@ -35,8 +43,10 @@ namespace MethodOverloadingExample
     class Program
     {
         static void Main(string[] args)
-        {            
-            Person p1 = new Employee();
+        {
+            Person p1 = new Student();
+            p1.Work();
+            p1 = new Employee();
             p1.Work();            
         }
     }
