@@ -12,7 +12,9 @@ namespace MethodOverloadingExample
     {
         public string Name { get; set; }
         public int Age { get; set; }
-        public void Work()
+
+        // Virtual Method
+        public virtual void Work()
         {
             Console.WriteLine("It works....");
         }
@@ -22,7 +24,9 @@ namespace MethodOverloadingExample
     {
         public double Salary { get; set; }
         public string Designation { get; set; }
-        public void Work()
+
+        // Override Method
+        public override void Work()
         {
             Console.WriteLine("It earns....");
         }
@@ -31,9 +35,9 @@ namespace MethodOverloadingExample
     class Program
     {
         static void Main(string[] args)
-        {
+        {            
             Person p1 = new Employee();
-            p1.Work();
+            p1.Work();            
         }
     }
 }
