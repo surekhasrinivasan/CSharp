@@ -40,6 +40,19 @@ namespace MethodOverloadingExample
         }
     }
 
+    class Manager : Employee
+    {
+        public sealed override void Work()
+        {
+            Console.WriteLine("It manages a team....");
+        }
+    }
+
+    class BranchManager : Manager
+    {
+
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -47,7 +60,12 @@ namespace MethodOverloadingExample
             Person p1 = new Student();
             p1.Work();
             p1 = new Employee();
-            p1.Work();            
+            p1.Work();
+            p1 = new Manager();
+            p1.Work();
+            p1 = new BranchManager();
+            p1.Work();
+
         }
     }
 }
