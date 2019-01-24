@@ -65,7 +65,6 @@ namespace MethodOverloadingExample
             p1.Work();
             p1 = new BranchManager();
             p1.Work();
-
         }
     }
 }
