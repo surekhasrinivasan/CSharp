@@ -13,5 +13,19 @@ namespace OperatorOverloadingExample
         {
 
         }
-    }    
+    }
+
+    class Rect
+    {
+        public int length;
+        public int breadth;
+        public static Rect operator +(Rect b, Rect c)
+        {
+            Rect rec = new Rect();
+            rec.length = b.length + c.length;
+            rec.breadth = b.breadth + c.breadth;
+
+            return rec;
+        }
+    }
 }
