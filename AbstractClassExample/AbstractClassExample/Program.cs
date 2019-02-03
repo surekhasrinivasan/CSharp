@@ -8,7 +8,7 @@ namespace AbstractClassExample
 {
     // Example to show Abstract class and Abstract method
 
-    // Abstract class cannot be instantiated
+    // Abstract class cannot be instantiated. In an abstract class there should be an abstract property or an abstract method. 
 
     abstract class Person
     {
