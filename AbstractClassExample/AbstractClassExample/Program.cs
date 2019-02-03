@@ -8,15 +8,14 @@ namespace AbstractClassExample
 {
     // Example to show Abstract class and Abstract method
 
-    class Person
+    // Abstract class cannot be instantiated
+
+    abstract class Person
     {
         public string Name { get; set; }
         public int Age { get; set; }
 
-        public virtual void Work()
-        {
-            Console.WriteLine("It works...");
-        }
+        public abstract void Work();        
     }
 
     class Student : Person
