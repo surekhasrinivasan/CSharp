@@ -44,7 +44,7 @@ namespace PolymorphismExample
         {
             return Name;
         }
-        public void Display()
+        public new void Display()
         {
             Console.WriteLine("This is the Student class");
         }
