@@ -12,23 +12,44 @@ namespace SealedClassExample
 
     // Program to show the implementation of Sealed class
 
-    sealed class SealedClass
+    //sealed class SealedClass
+    //{
+    //    public int x;
+    //    public int y;
+    //}
+
+    //class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        SealedClass sc = new SealedClass();
+    //        sc.x = 100;
+    //        sc.y = 100;
+
+    //        Console.WriteLine("X = {0}, y = {1}", sc.x, sc.y);
+
+    //        Console.Read();
+    //    }
+    //}
+
+    sealed class MyClass1
     {
-        public int x;
-        public int y;
+        public void SampleMethod()
+        {
+            Console.WriteLine();
+        }
+    }
+
+    class MyClass2 : MyClass1
+    {
+
     }
 
     class Program
     {
-        static void Main(string[] args)
+        static void main()
         {
-            SealedClass sc = new SealedClass();
-            sc.x = 100;
-            sc.y = 100;
 
-            Console.WriteLine("X = {0}, y = {1}", sc.x, sc.y);
-
-            Console.Read();
         }
     }
 }
