@@ -32,6 +32,10 @@ namespace ArrayListsExample1
             Console.WriteLine("The fourth element of the array is " + ar[3]);
             Console.WriteLine("The fifth element of the array is " + ar[4]);
             Console.WriteLine("The sixth element of the array is " + ar[5]);
+
+            // Displaying the size of the array list
+            Console.WriteLine("The size of the array list is: " + ar.Count);
+
             Console.Read();
         }
     }
