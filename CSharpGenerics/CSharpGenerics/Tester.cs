@@ -47,7 +47,25 @@ namespace CSharpGenerics
                 Console.Write(intArray.getItem(c) + " ");
             }
 
-            Console.WriteLine();            
+            Console.WriteLine();
+
+            // delcaring a character array
+            MyGenericArray<char> charArray = new MyGenericArray<char>(5);
+
+            // setting values
+            for(int c = 0; c < 5; c++)
+            {
+                charArray.setItem(c, (char)(c + 97));
+            }
+
+            // retrieving the values
+            for(int c = 0; c < 5; c++)
+            {
+                Console.Write(charArray.getItem(c) + " ");
+            }
+            Console.WriteLine();
+
+            Console.ReadKey();
         }
     }
 }
