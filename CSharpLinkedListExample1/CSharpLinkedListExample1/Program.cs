@@ -11,6 +11,16 @@ namespace CSharpLinkedListExample1
     {
         static void Main(string[] args)
         {
+            LinkedList<string> l = new LinkedList<string>();
+
+            l.AddLast("One");
+            l.AddLast("Two");
+            l.AddLast("Three");
+
+            foreach(var element in l)
+            {
+                Console.WriteLine(element);
+            }
         }
     }
 }
