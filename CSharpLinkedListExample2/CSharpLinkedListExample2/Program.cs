@@ -25,6 +25,24 @@ namespace CSharpLinkedListExample2
             current = head;
         }
 
+        public void AddStart(object data)
+        {
+            Node newnode = new Node();
+            newnode.next = head.next;
+            newnode.data = data;
+            head.next = newnode;
+            counter++;
+        }
+
+        public void AddEnd(object data)
+        {
+            Node newnode = new Node();
+            newnode.data = data;
+            current.next = newnode;
+            current = newnode;
+            counter++;
+        }
+
         static void Main(string[] args)
         {
         }
