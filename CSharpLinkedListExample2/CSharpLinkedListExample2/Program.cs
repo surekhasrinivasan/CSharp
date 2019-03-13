@@ -52,7 +52,7 @@ namespace CSharpLinkedListExample2
             }
             else
             {
-                Console.WriteLine("No elements exist in this linked list);
+                Console.WriteLine("No elements exist in this linked list");
             }
 
         }
@@ -76,8 +76,32 @@ namespace CSharpLinkedListExample2
             }
         }
 
+        public void Display()
+        {
+            Console.Write("Head ->");
+            Node curr = head;
+            while(curr.next != null)
+            {
+                curr = curr.next;
+                Console.WriteLine(curr.data.ToString());
+            }
+        }
+
         static void Main(string[] args)
         {
+            Program p = new Program();
+            p.AddEnd(2);
+            p.AddStart(1);
+            p.AddStart(0);
+            p.AddEnd(3);
+            p.Display();
+            p.RemoveStart();
+            Console.WriteLine("Removed node from Start");
+            p.Display();
+            Console.WriteLine("Removed node from End");
+            p.RemoveEnd();
+            p.Display();
+            Console.ReadKey();
         }
     }
 }
