@@ -13,5 +13,11 @@ namespace CSharpLinkedListExample3
         static void Main(string[] args)
         {
         }
+
+        public class Node
+        {
+            public int Data = 0;
+            public Node next = null;
+        }        
     }
 }
