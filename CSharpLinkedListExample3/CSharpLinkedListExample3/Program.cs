@@ -40,6 +40,18 @@ namespace CSharpLinkedListExample3
                     head.Data = data;
                 }
             }
+
+            public static void Print(Node head)
+            {
+                if (head == null) return;
+
+                Node current = head;
+                do
+                {
+                    Console.Write("{0}", current.Data);
+                    current = current.next;
+                } while (current != null);
+            }
         }
     }
 }
