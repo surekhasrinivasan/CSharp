@@ -12,6 +12,16 @@ namespace CSharpLinkedListExample3
     {
         static void Main(string[] args)
         {
+            Node head = null;
+            LinkedList.Append(ref head, 15);
+            LinkedList.Append(ref head, 37);
+            LinkedList.Append(ref head, 83);
+            LinkedList.Append(ref head, 56);
+
+            Console.WriteLine("Linked List: ");
+            LinkedList.Print(head);
+            Console.WriteLine();
+
         }
 
         public class Node
@@ -48,7 +58,7 @@ namespace CSharpLinkedListExample3
                 Node current = head;
                 do
                 {
-                    Console.Write("{0}", current.Data);
+                    Console.Write("{0} ", current.Data);
                     current = current.next;
                 } while (current != null);
             }
