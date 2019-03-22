@@ -62,6 +62,18 @@ namespace CSharpLinkedListExample3
                     current = current.next;
                 } while (current != null);
             }
+
+            public static void PrintRecursive(Node head)
+            {
+                if(head == null)
+                {
+                    Console.WriteLine();
+                    return;
+                }
+
+                Console.Write("{0}", head.Data);
+                PrintRecursive(head.next);
+            }            
         }
     }
 }
