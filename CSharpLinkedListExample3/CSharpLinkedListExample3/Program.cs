@@ -91,7 +91,23 @@ namespace CSharpLinkedListExample3
 
                 current.next = prev;
                 head = current;
-            }           
+            }
+
+            public static Node newHead;
+
+            public static void ReverseUsingRecursion(Node head)
+            {
+                if (head == null) return;
+
+                if (head.next == null)
+                {
+                    newHead = head;
+                    return;
+                }
+                ReverseUsingRecursion(head.next);
+                head.next.next = head;
+                head.next = null;
+            }
         }
     }
 }
