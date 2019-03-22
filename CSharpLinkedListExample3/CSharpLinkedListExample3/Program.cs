@@ -73,7 +73,25 @@ namespace CSharpLinkedListExample3
 
                 Console.Write("{0}", head.Data);
                 PrintRecursive(head.next);
-            }            
+            }
+
+            public static void Reverse(ref Node head)
+            {
+                if (head == null) return;
+
+                Node prev = null, current = head, next = null;
+
+                while (current.next != null)
+                {
+                    next = current.next;
+                    current.next = prev;
+                    prev = current;
+                    current = next;
+                }
+
+                current.next = prev;
+                head = current;
+            }           
         }
     }
 }
