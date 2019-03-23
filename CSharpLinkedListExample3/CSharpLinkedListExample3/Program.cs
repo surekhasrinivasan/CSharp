@@ -22,6 +22,19 @@ namespace CSharpLinkedListExample3
             LinkedList.Print(head);
             Console.WriteLine();
 
+            LinkedList.Reverse(ref head);
+
+            Console.WriteLine();
+            Console.WriteLine("Reversed Linked List: ");
+            LinkedList.Print(head);
+
+            Console.WriteLine();
+             
+            Console.WriteLine("Reverse of Reversed Linked List: ");
+
+            LinkedList.ReverseUsingRecursion(head);
+            head = LinkedList.newHead;
+            LinkedList.PrintRecursive(head);
         }
 
         public class Node
@@ -71,7 +84,7 @@ namespace CSharpLinkedListExample3
                     return;
                 }
 
-                Console.Write("{0}", head.Data);
+                Console.Write("{0} ", head.Data);
                 PrintRecursive(head.next);
             }
 
