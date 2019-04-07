@@ -13,6 +13,19 @@ namespace ExampleForStaticVsInstanceConstructor
      * Instance constructor is used to initialize instance data. Instance constructor is called 
      * every time when object of class is created.
      */
+    
+    class RandomNumberClass
+    {
+        private static Random RandomKey; // Private static field
+        static RandomNumberClass() // Static constructor
+        {
+            RandomKey = new Random(); // Initialize RandomKey
+        }
+        public int GetRandomNumber()
+        {
+            return RandomKey.Next();
+        }
+    }
     class Program
     {
         static void Main(string[] args)
