@@ -19,6 +19,13 @@ namespace CSharpLinkedListExample4
             list.AddLast("B");
             list.AddLast("C");
 
+            // Insert a node before the second node (after the first node)
+            LinkedListNode<string> node = list.Find("A");
+            list.AddAfter(node, "Inserted");
+
+
+
+
         }
     }
 }
