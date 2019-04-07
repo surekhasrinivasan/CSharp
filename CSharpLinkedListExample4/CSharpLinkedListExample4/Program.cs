@@ -11,6 +11,9 @@ namespace CSharpLinkedListExample4
     {
         static void Main(string[] args)
         {
+            // Create a new Linked List
+            LinkedList<string> list = new LinkedList<string>();
+
         }
     }
 }
