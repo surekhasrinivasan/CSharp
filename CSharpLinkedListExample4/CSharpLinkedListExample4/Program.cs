@@ -14,6 +14,11 @@ namespace CSharpLinkedListExample4
             // Create a new Linked List
             LinkedList<string> list = new LinkedList<string>();
 
+            // Add elements to the linked list
+            list.AddLast("A");
+            list.AddLast("B");
+            list.AddLast("C");
+
         }
     }
 }
