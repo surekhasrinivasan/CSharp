@@ -21,11 +21,14 @@ namespace CSharpLinkedListExample4
 
             // Insert a node before the second node (after the first node)
             LinkedListNode<string> node = list.Find("A");
-            list.AddAfter(node, "Inserted");
+            list.AddAfter(node, "Inserted Node");
 
-
-
-
+            // loop through the linked list
+            Console.WriteLine("Elements in the linked list: ");
+            foreach(var value in list)
+            {
+                Console.WriteLine(value);
+            }
         }
     }
 }
