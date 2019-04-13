@@ -15,6 +15,19 @@ namespace CSharpGenericHashSetExample1
     {
         static void Main(string[] args)
         {
+            HashSet<int> evenNumbers = new HashSet<int>();
+            HashSet<int> oddNumbers = new HashSet<int>();
+
+            for(int i = 0; i < 5; i++)
+            {
+                // Populate numbers with just even numbers 
+                evenNumbers.Add(i * 2);
+
+                // Populate numbers with just odd numbers 
+                oddNumbers.Add((i * 2) + 1);
+            }
+            Console.WriteLine("evenNumbers contains {0} elements", evenNumbers.Count);
+            Console.WriteLine("oddNumbers contains {0} elements", oddNumbers.Count);
         }
     }
 }
