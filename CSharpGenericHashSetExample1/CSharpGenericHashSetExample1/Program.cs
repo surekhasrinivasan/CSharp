@@ -30,7 +30,16 @@ namespace CSharpGenericHashSetExample1
             DisplaySet(evenNumbers);
             
             Console.Write("oddNumbers contains {0} elements: ", oddNumbers.Count);
-            DisplaySet(oddNumbers);            
+            DisplaySet(oddNumbers);
+
+            // Create a new HashSet populated with even numbers 
+            HashSet<int> numbers = new HashSet<int>(evenNumbers);
+            Console.WriteLine("numbers UnionWith oddNumbers....");
+            numbers.UnionWith(oddNumbers);
+
+            Console.Write("numbers contains {0} elements: ", numbers.Count);
+            DisplaySet(numbers);
+
         }
 
         private static void DisplaySet(HashSet<int> set)
