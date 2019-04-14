@@ -26,8 +26,22 @@ namespace CSharpGenericHashSetExample1
                 // Populate numbers with just odd numbers 
                 oddNumbers.Add((i * 2) + 1);
             }
-            Console.WriteLine("evenNumbers contains {0} elements", evenNumbers.Count);
-            Console.WriteLine("oddNumbers contains {0} elements", oddNumbers.Count);
+            Console.Write("evenNumbers contains {0} elements: ", evenNumbers.Count);
+            DisplaySet(evenNumbers);
+            
+            Console.Write("oddNumbers contains {0} elements: ", oddNumbers.Count);
+            DisplaySet(oddNumbers);            
+        }
+
+        private static void DisplaySet(HashSet<int> set)
+        {
+            Console.Write("{");
+            foreach(int i in set)
+            {
+                Console.Write("{0} ", i);
+            }
+            Console.Write("}");
+            Console.WriteLine();
         }
     }
 }
