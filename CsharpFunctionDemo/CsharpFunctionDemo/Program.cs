@@ -11,18 +11,35 @@ namespace CsharpFunctionDemo
     // A function that does not return any value specifies void 
     // type as a return type.
 
+    //class Program
+    //{
+    //    // No return type
+    //    public void Show() // no parameter
+    //    {
+    //        Console.WriteLine("This is no parameter function");
+    //    }
+
+    //    static void Main(string[] args)
+    //    {
+    //        Program program = new Program(); // Creating object
+    //        program.Show(); // calling function
+    //    }
+    //}
+
+    // C# function: Using parameter but no return type
+
     class Program
     {
         // No return type
-        public void Show() // no parameter
+        public void Show(string message) 
         {
-            Console.WriteLine("This is no parameter function");
+            Console.WriteLine("Hello " + message);
         }
 
         static void Main(string[] args)
         {
             Program program = new Program(); // Creating object
-            program.Show(); // calling function
+            program.Show("Happy World!"); // calling function
         }
     }
 }
