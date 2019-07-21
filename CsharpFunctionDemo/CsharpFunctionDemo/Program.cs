@@ -13,8 +13,16 @@ namespace CsharpFunctionDemo
 
     class Program
     {
+        // No return type
+        public void Show() // no parameter
+        {
+            Console.WriteLine("This is no parameter function");
+        }
+
         static void Main(string[] args)
         {
+            Program program = new Program(); // Creating object
+            program.Show(); // calling function
         }
     }
 }
