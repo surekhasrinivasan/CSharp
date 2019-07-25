@@ -26,7 +26,13 @@ namespace CsharpListExample
             //}
 
             // Create a list of strings using collection initializer
+            var names = new List<string>() { "Sam", "Tom", "Swa", "Rob" };
 
+            // iterate through the list. 
+            foreach(var name in names)
+            {
+                Console.WriteLine(name);
+            }
         }
     }
 }
