@@ -11,19 +11,22 @@ namespace CsharpListExample
     {
         static void Main(string[] args)
         {
-            // create a list of strings
+            //// create a list of strings
 
-            var names = new List<string>();
-            names.Add("John Smith");
-            names.Add("Peter");
-            names.Add("Sam");
-            names.Add("George");
+            //var names = new List<string>();
+            //names.Add("John Smith");
+            //names.Add("Peter");
+            //names.Add("Sam");
+            //names.Add("George");
 
             // Iterate list element using foreach loop
-            foreach(var name in names)
-            {
-                Console.WriteLine(name);
-            }
+            //foreach(var name in names)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
+            // Create a list of strings using collection initializer
+
         }
     }
 }
