@@ -20,6 +20,12 @@ namespace DelegateExample
             return number;
         }
 
+        public static int mul(int n)
+        {
+            number = number * n;
+            return number;
+        }
+
         static void Main(string[] args)
         {
         }
