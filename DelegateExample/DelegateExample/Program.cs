@@ -12,6 +12,14 @@ namespace DelegateExample
     // Program to demo Delegate Example
     class Program
     {
+        static int number = 100;
+
+        public static int add(int n)
+        {
+            number = number + n;
+            return number;
+        }
+
         static void Main(string[] args)
         {
         }
