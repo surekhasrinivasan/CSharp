@@ -10,6 +10,9 @@ namespace DelegateExample
     // But it is object oriented, secured and type-safe than function pointer. 
 
     // Program to demo Delegate Example
+
+    delegate int Calculator(int n); // declaring delegate
+
     class Program
     {
         static int number = 100;
@@ -26,8 +29,20 @@ namespace DelegateExample
             return number;
         }
 
-        static void Main(string[] args)
+        public static int getNumber()
         {
+            return number;
+        }
+
+        public static void Main(string[] args)
+        {
+            Calculator c1 = new Calculator(add); // instantiating delegate
+            Calculator c2 = new Calculator(mul);
+            c1(20); // calling method using delegate
+            Console.WriteLine("After c1 delegate, Number is: " + getNumber());
+
+            c2(3);
+            Console.WriteLine("After c2 delegate, Number is: " + getNumber());           
         }
     }
 }
