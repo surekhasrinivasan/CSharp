@@ -19,5 +19,16 @@ namespace LambdaFunctionExample
     //}
 
     // Program to demo Anonymous function Example
-
+    class Program
+    {
+        public delegate void AnonymousFun();
+        static void Main()
+        {
+            AnonymousFun fun = delegate ()
+            {
+                Console.WriteLine("This is anonymous function");
+            };
+            fun();
+        }
+    }
 }
