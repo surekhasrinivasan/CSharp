@@ -35,20 +35,29 @@ namespace EnumExample
     //    }
     //}
 
-    // Program to demo Enum Example for Days
-    class Program
-    {
-        public enum Days { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
+    //// Program to demo Enum Example for Days
+    //class Program
+    //{
+    //    public enum Days { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
 
+    //    static void Main(string[] args)
+    //    {
+    //        int x = (int)Days.Sun;
+    //        int y = (int)Days.Mon;
+    //        int z = (int)Days.Sat;
+
+    //        Console.WriteLine("Sun = {0}", x);
+    //        Console.WriteLine("Mon = {0}", y);
+    //        Console.WriteLine("Sat = {0}", z);            
+    //    }
+    //}
+
+    // Program to demo Enum Example traversing all values using getNames()
+    class Program
+    {        
         static void Main(string[] args)
         {
-            int x = (int)Days.Sun;
-            int y = (int)Days.Mon;
-            int z = (int)Days.Sat;
-
-            Console.WriteLine("Sun = {0}", x);
-            Console.WriteLine("Mon = {0}", y);
-            Console.WriteLine("Sat = {0}", z);            
+            
         }
     }
 }
