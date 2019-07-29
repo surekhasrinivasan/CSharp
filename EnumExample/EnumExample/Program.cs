@@ -54,10 +54,15 @@ namespace EnumExample
 
     // Program to demo Enum Example traversing all values using getNames()
     class Program
-    {        
-        static void Main(string[] args)
+    {
+        public enum Days { Sun, Mon, Tue, Wed, Thu, Fri, Sat };
+
+        public static void Main()
         {
-            
+            foreach(string str in Enum.GetNames(typeof(Days)))
+            {
+                Console.WriteLine(str);
+            }            
         }
     }
 }
