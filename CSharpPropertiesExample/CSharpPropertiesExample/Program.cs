@@ -26,13 +26,13 @@ namespace CSharpPropertiesExample
                 name = value;
             }
         }
-
     }
     class Program
     {
         static void Main(string[] args)
         {
-
+            Employee e1 = new Employee();
+            e1.Name = "John Smith";
         }
     }
 }
