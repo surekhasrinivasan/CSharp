@@ -33,6 +33,7 @@ namespace CSharpPropertiesExample
         {
             Employee e1 = new Employee();
             e1.Name = "John Smith";
+            Console.WriteLine("Employee Name: " + e1.Name);
         }
     }
 }
